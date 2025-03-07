@@ -8,7 +8,7 @@
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.project7</groupId>
+	<groupId>com.team7</groupId>
 	<artifactId>404_Not_Found</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>404_Not_Found</name>
