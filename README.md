@@ -26,5 +26,5 @@ https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#-databases - 뱃�
   <img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"><br>           <!-- 깃 -->
   <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"><br>   <!-- 피그마 -->
 
-  Frameworks, Platforms and Libraries
+  Frameworks, Platforms and Libraries <br>
   <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white">  <!-- 부트스트랩 -->
