@@ -7,7 +7,7 @@ hihihihi
 ㅁㄴㅇ
 ㄴㅁ
 ㅇ
-askjd;fskl<br>
+askjd;fskl  <br>
 https://github.com/yimjongwon/project_7.git
   <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/><br>       <!-- 자바 -->
   <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"/><br>             <!-- 파이썬 -->        
@@ -23,3 +23,4 @@ https://github.com/yimjongwon/project_7.git
   <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=white"/><br> <!-- 아파치 -->
   <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"><br>           <!-- 깃헙 -->
   <img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"><br>           <!-- 깃 -->
+  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"><br>
