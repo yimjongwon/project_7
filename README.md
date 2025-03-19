@@ -9,6 +9,7 @@ hihihihi
 ㅇ
 askjd;fskl  <br>
 https://github.com/yimjongwon/project_7.git <br>
+https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#-databases - 뱃지 참고 <br>
   <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/><br>       <!-- 자바 -->
   <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"/>        <!-- 파이썬 -->        
   <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"/><br>    <!-- HTML -->
