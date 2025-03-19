@@ -23,5 +23,5 @@ https://github.com/yimjongwon/project_7.git <br>
   <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=white"/><br> <!-- 아파치 -->
   <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"><br>           <!-- 깃헙 -->
   <img src="https://img.shields.io/badge/git-F05032?style=flat-square&logo=git&logoColor=white"><br>           <!-- 깃 -->
-  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"><br>  
-  <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
+  <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"><br>   <!-- 피그마 -->
+  <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white">  <!-- 부트스트랩 -->
