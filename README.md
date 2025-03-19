@@ -10,7 +10,7 @@ hihihihi
 askjd;fskl  <br>
 https://github.com/yimjongwon/project_7.git <br>
   <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/><br>       <!-- 자바 -->
-  <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"/><br>             <!-- 파이썬 -->        
+  <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"/>        <!-- 파이썬 -->        
   <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"/><br>    <!-- HTML -->
   <img src="https://img.shields.io/badge/css-1572B6?style=flat-square&logo=css3&logoColor=white"/><br>          <!-- CSS -->
   <img src="https://img.shields.io/badge/Javascript-ffb13b?style=flat-square&logo=javascript&logoColor=white"/><br>    <!-- 자바스크립트 -->
