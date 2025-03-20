@@ -14,23 +14,9 @@ STP정책 실행
 ![image](https://github.com/user-attachments/assets/2689a46f-3c9d-44e6-a5c4-9c0a69740126)
 ![image](https://github.com/user-attachments/assets/6637b113-6882-4e03-8eed-416f439a4e5a)
 
+
+
 ### 4주차 ()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 💾 Databases <br>
   <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"/>     <!-- mysql -->
@@ -79,7 +65,7 @@ STP정책 실행
   <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=white" height="30px;"/><br> <!-- 아파치톰캣 -->
 
 ### ☁️ Cloud
-  <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white"><br>           <!-- 깃허브 -->
+  <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white" height="30px;"><br>           <!-- 깃허브 -->
 
 
 
