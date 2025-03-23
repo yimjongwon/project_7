@@ -8,18 +8,32 @@
 ![image](https://github.com/user-attachments/assets/51eb2c0f-9cb5-4b09-ae28-af8098dfe224)
 
 # 목표 및 목적
+
 <br>
+
 # 범위
+
+<br>
 
 # 주요 기능 및 특징
 
+<br>
+
 # 대상 사용자
+
+<br>
 
 # 기술 스택
 
+<br>
+
 # 일정 및 계획
 
+<br>
+
 # 예상 결과 및 효과
+
+<br>
 
 # 결론
 
