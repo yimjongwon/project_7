@@ -77,6 +77,8 @@
 <br><br><br><br><br><br><br><br><br><br><br>
 
 # 예상 결과 및 효과
+![기대효과(2)](https://github.com/user-attachments/assets/aadb7aa3-c596-4d41-8469-c089285acebc)
+
 
 <br><br><br><br><br><br><br><br><br>
 
