@@ -5,7 +5,8 @@
 
 
 # 배경 및 필요성
-![image](https://github.com/user-attachments/assets/5c327b74-5fd6-4f58-9711-12142a381fe1)
+![image](https://github.com/user-attachments/assets/51eb2c0f-9cb5-4b09-ae28-af8098dfe224)
+
 
 
 
