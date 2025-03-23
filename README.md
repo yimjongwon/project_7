@@ -17,7 +17,8 @@
 
 # 주요 기능 및 특징
 
-![image](https://github.com/user-attachments/assets/3e15537b-47fa-41a6-ac75-70c27b687b79)
+![image](https://github.com/user-attachments/assets/f132c4fa-8be9-4f14-a37a-bcab8a5b2f6d)
+
 
 
 # 대상 사용자
