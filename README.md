@@ -25,44 +25,6 @@
 
 # 기술 스택
 
-<br><br><br><br><br><br><br><br><br>
-
-# 일정 및 계획
-
-<br><br><br><br><br><br><br><br><br><br><br>
-
-# 예상 결과 및 효과
-
-<br><br><br><br><br><br><br><br><br>
-
-# 결론
-
-
-
-<br><br><br><br><br><br><br><br>
-
-------------------
-
-
-
-
-
-### 프로젝트 개요
-- 작품의 세분화 된 시장분석이 필요하기 때문에
-스마트홈 주제 -> 스마트 환경관리 시스템
-
-STP정책 실행
-![image](https://github.com/user-attachments/assets/12555a5b-9df7-4f2f-afaf-1345c06e1421)
-![image](https://github.com/user-attachments/assets/0e74f80c-5d4d-4e60-8b4d-1c896063d871)
-![image](https://github.com/user-attachments/assets/795b2dd8-2511-4b14-9f38-4fa107dc5b89)
-![image](https://github.com/user-attachments/assets/3510b0cf-d198-4095-9702-09d5faf16e73)
-![image](https://github.com/user-attachments/assets/2689a46f-3c9d-44e6-a5c4-9c0a69740126)
-![image](https://github.com/user-attachments/assets/6637b113-6882-4e03-8eed-416f439a4e5a)
-
-
-
-### 4주차 ()
-
 ### 💾 Databases <br>
   <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"/>     <!-- mysql -->
   <img src="https://img.shields.io/badge/sqlite-4169E1?style=flat-square&logo=sqlite&logoColor=white"/><br>      <!-- sqlite -->
@@ -111,6 +73,43 @@ STP정책 실행
 
 ### ☁️ Cloud
   <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white" height="30px;"><br>           <!-- 깃허브 -->
+
+# 일정 및 계획
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+# 예상 결과 및 효과
+
+<br><br><br><br><br><br><br><br><br>
+
+# 결론
+
+
+
+<br><br><br><br><br><br><br><br>
+
+------------------
+
+
+
+
+
+### 프로젝트 개요
+- 작품의 세분화 된 시장분석이 필요하기 때문에
+스마트홈 주제 -> 스마트 환경관리 시스템
+
+STP정책 실행
+![image](https://github.com/user-attachments/assets/12555a5b-9df7-4f2f-afaf-1345c06e1421)
+![image](https://github.com/user-attachments/assets/0e74f80c-5d4d-4e60-8b4d-1c896063d871)
+![image](https://github.com/user-attachments/assets/795b2dd8-2511-4b14-9f38-4fa107dc5b89)
+![image](https://github.com/user-attachments/assets/3510b0cf-d198-4095-9702-09d5faf16e73)
+![image](https://github.com/user-attachments/assets/2689a46f-3c9d-44e6-a5c4-9c0a69740126)
+![image](https://github.com/user-attachments/assets/6637b113-6882-4e03-8eed-416f439a4e5a)
+
+
+
+### 4주차 ()
+
 
 
 
