@@ -9,8 +9,7 @@
 
 # 목표 및 목적
 
-![image](https://github.com/user-attachments/assets/a41db564-2b60-4663-8942-b7aed5daf136)
-
+![image](https://github.com/user-attachments/assets/aa7a42e8-183d-4a0a-a092-03e9dbc505b9)
 
 # 주요 기능 및 특징
 
