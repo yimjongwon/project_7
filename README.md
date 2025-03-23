@@ -8,7 +8,7 @@
 ![image](https://github.com/user-attachments/assets/51eb2c0f-9cb5-4b09-ae28-af8098dfe224)
 
 # 목표 및 목적
-
+<br>
 # 범위
 
 # 주요 기능 및 특징
