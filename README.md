@@ -7,6 +7,22 @@
 # 배경 및 필요성
 ![image](https://github.com/user-attachments/assets/51eb2c0f-9cb5-4b09-ae28-af8098dfe224)
 
+# 목표 및 목적
+
+# 범위
+
+# 주요 기능 및 특징
+
+# 대상 사용자
+
+# 기술 스택
+
+# 일정 및 계획
+
+# 예상 결과 및 효과
+
+# 결론
+
 
 
 
