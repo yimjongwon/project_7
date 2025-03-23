@@ -77,8 +77,11 @@
 <br><br><br><br><br><br><br><br><br><br><br>
 
 # 예상 결과 및 효과
-![기대효과(2)](https://github.com/user-attachments/assets/aadb7aa3-c596-4d41-8469-c089285acebc)
 
+![쾌적한학습환경을위한단계](https://github.com/user-attachments/assets/8b46ccd7-ceb6-4d2a-a741-58c8c00df8f2)
+![기대 효과](https://github.com/user-attachments/assets/35efcb99-9887-4a10-9570-b05178335c1b)
+![프로젝트목표](https://github.com/user-attachments/assets/b5ae60c2-9c61-43e5-bf85-9d8c1597d1f0)
+![기대효과(2)](https://github.com/user-attachments/assets/521b3c79-e3af-4aec-b007-e19458c9cc5f)
 
 <br><br><br><br><br><br><br><br><br>
 
