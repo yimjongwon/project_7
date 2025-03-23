@@ -5,7 +5,8 @@
 
 
 # 배경 및 필요성
-![image](https://github.com/user-attachments/assets/f00ddf9a-7210-4d53-8d81-bfc8949784c3)
+![image](https://github.com/user-attachments/assets/c884da41-8ef6-4df8-8ac3-af454fafa670)
+
 
 
 ### 프로젝트 개요
