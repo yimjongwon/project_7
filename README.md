@@ -2,6 +2,12 @@
 뱃지 참고- https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#-databases <br>
 아이콘- https://simpleicons.org/?q=sql
 # 스마트 환경 모니터링 시스템
+
+
+# 배경 및 필요성
+![image](https://github.com/user-attachments/assets/f00ddf9a-7210-4d53-8d81-bfc8949784c3)
+
+
 ### 프로젝트 개요
 - 작품의 세분화 된 시장분석이 필요하기 때문에
 스마트홈 주제 -> 스마트 환경관리 시스템
