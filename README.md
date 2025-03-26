@@ -67,6 +67,8 @@ STP정책 실행
 
 ### 4주차 (3주차 피드백)
 
+<img src="https://github.com/user-attachments/assets/a1c8c825-75b2-4b26-8608-b41010bd1b33" width: "300px;" height="300px;"/><br>
+
 
 ![image](https://github.com/user-attachments/assets/a1c8c825-75b2-4b26-8608-b41010bd1b33)
 ![image](https://github.com/user-attachments/assets/997ea896-39f8-47dc-99fe-b2cc50bc7439)
