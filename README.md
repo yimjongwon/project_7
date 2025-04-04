@@ -85,6 +85,40 @@ STP정책 실행
 <img src="https://github.com/user-attachments/assets/b00b6bc3-b6c7-4fa2-853c-74f5de74d908" width= "800px;" height="400px;"/><br>
 
 
+### 5주차
+
+![image](https://github.com/user-attachments/assets/0d106e5b-36dc-4d83-a433-c2c31e5ad9f8)
+![image](https://github.com/user-attachments/assets/98146a77-376a-4366-872b-c676c7200ee2)
+![image](https://github.com/user-attachments/assets/7dca419c-8e4b-48a6-ad77-900fbd879853)
+![image](https://github.com/user-attachments/assets/c8939c8b-92d5-479f-91cd-f3927bf5c626)
+![image](https://github.com/user-attachments/assets/339a4171-9c3d-4978-9e22-5e35390ef8a8)
+![image](https://github.com/user-attachments/assets/330fdf9f-67b8-4e50-8f96-4ed7752a5a93)
+![image](https://github.com/user-attachments/assets/e83a2a5e-1ffc-41df-8da3-60cdfcadd969)
+![image](https://github.com/user-attachments/assets/45069f7f-c270-4789-ba01-3275e4315138)
+![image](https://github.com/user-attachments/assets/fdcafff8-4863-4458-86e0-49e08a25cc74)
+![image](https://github.com/user-attachments/assets/6e587ca2-6376-4b9c-aade-67a65904d396)
+![image](https://github.com/user-attachments/assets/42326b6c-7380-4e42-9051-165293021531)
+
+- # 채팅 디렉토리 구조(intelij)
+<img src="https://github.com/user-attachments/assets/25165bb4-22ae-4037-8f91-34ee478bdc55" width= "600px;" height="400px;"/><br>
+
+## 채팅(임시)
+
+<img src="https://github.com/user-attachments/assets/501fe7d8-a8c6-4d8d-8a4b-0d548bf0115b" width= "600px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/606649cf-0f95-433d-be6d-05a4bc9c144d" height="400px;"/><br>
+
+### 코드(임시)
+
+## chat.html
+![image](https://github.com/user-attachments/assets/9333f728-9e48-447b-b496-e5ca9a733a69)
+## chat.js
+![image](https://github.com/user-attachments/assets/e40e2fb9-bf7e-447d-976a-a816c4f0dc58)
+![image](https://github.com/user-attachments/assets/9b4aa47e-1454-4863-bd09-e80e7e1190be)
+
+## pom.xml
+![image](https://github.com/user-attachments/assets/df927a39-9c5d-42b2-b9d1-18798c8c2d57)
+
+
 
 
 
