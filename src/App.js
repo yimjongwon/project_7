@@ -2,9 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Login from "./Login/Login"; // 로그인 컴포넌트 import
-import Header from "./components/Header";
+import Login from "./Login/Login";
+import Signup from "./Login/Signup";
 import Main from "./Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 
 function App() {
   const [message, setMessage] = useState("");
@@ -37,20 +40,21 @@ function App() {
     //         <Route path="/login" element={<Login />} />
     //     </Routes>
     // </Router>
+    return (
+        <div>
+            <Router>
+                <Header /> {/* 모든 페이지 상단에 공통으로 표시 */}
 
-  return (
-      <div>
-          <Router>
-              <Header />
-              <Routes>
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/" element={<Main />} />
-              </Routes>
-          </Router>
+                <Routes>
+                    <Route path="/" element={<Main />} />         {/* 메인 페이지 */}
+                    <Route path="/login" element={<Login />} />   {/* 로그인 페이지 */}
+                    <Route path="/signup" element={<Signup />} /> {/* 회원가입 페이지 */}
+                </Routes>
 
-
-      </div>
-  );
+                <Footer /> {/* 모든 페이지 하단에 공통으로 표시 */}
+            </Router>
+        </div>
+    );
 }
 
 export default App;
