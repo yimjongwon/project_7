@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./css/Main.css";
 
-function Main() {
+function Main({message}) {
     return (
         <div className="container1">
             <div className="main-banner">
@@ -80,7 +80,10 @@ function Main() {
             </div> {/* container4 */}
 
             <div className="empty"></div>
-
+            {/* Spring 메시지 표시 */}
+            <div style={{ textAlign: "center", margin: "20px 0", fontSize: "20px", fontWeight: "bold" }}>
+                <p>Spring에서 받은 메시지: {message}</p>
+            </div>
 
         </div> /* container1 */
     );

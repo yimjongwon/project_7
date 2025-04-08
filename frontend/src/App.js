@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import Login from "./Login/Login";
 import Signup from "./Login/Signup";
 import Main from "./Main";
@@ -22,9 +23,10 @@ function App() {
             });
     }, []);
 
-    //<h1>Spring에서 받은 메시지:</h1>
-    //<p>{message}</p>
-
+    <div>
+        <h1>Spring에서 받은 메시지:</h1>
+        <p>{message}</p>
+    </div>
     // <Router>
     //     <Routes>
     //         <Route path="/" element={
@@ -46,7 +48,7 @@ function App() {
                 <Header /> {/* 모든 페이지 상단에 공통으로 표시 */}
 
                 <Routes>
-                    <Route path="/" element={<Main />} />         {/* 메인 페이지 */}
+                    <Route path="/" element={<Main message={message} />} />         {/* 메인 페이지 */}
                     <Route path="/login" element={<Login />} />   {/* 로그인 페이지 */}
                     <Route path="/signup" element={<Signup />} /> {/* 회원가입 페이지 */}
                 </Routes>
