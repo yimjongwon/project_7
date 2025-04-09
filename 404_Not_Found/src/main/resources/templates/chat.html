@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>채팅</title>
+    <style>
+        .chat-message {
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 12px;
+            max-width: 70%;
+            clear: both;
+            display: inline-block;
+        }
+        .left {
+            background-color: #f1f1f1;
+            float: left;
+            text-align: left;
+        }
+        .right {
+            background-color: #d1e7dd;
+            float: right;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<h2>채팅</h2>
+<div id="chat-window" style="border:1px solid #ccc; height:300px; overflow-y:scroll;"></div>
+<input type="text" id="message-input" placeholder="메시지 입력">
+<button id="send-button">전송</button>
+
+<!-- 📦 외부 JS 연결 -->
+<script src="/js/chat.js"></script>
+</body>
+</html>
