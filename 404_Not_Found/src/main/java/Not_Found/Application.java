@@ -1,4 +1,4 @@
-package com.team7.web;
+package Not_Found;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
