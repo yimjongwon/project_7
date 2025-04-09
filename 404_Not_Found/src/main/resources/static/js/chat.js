@@ -1,6 +1,6 @@
 let socket;
 
-function connect(userId, role) {
+function connect(userId, role) { //연결
     const protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
     socket = new WebSocket(`${protocol}${location.host}/ws/chat?userId=${userId}&role=${role}`);
 
@@ -27,7 +27,7 @@ function connect(userId, role) {
     socket.onerror = (error) => console.error("⚠️ WebSocket 오류:", error);
 }
 
-function setupChat() {
+function setupChat() { //
     const userId = prompt("아이디 입력 (예: student1 또는 admin)");
     const role = userId.startsWith("admin") ? "admin" : "student";
     const inputBox = document.getElementById('message-input');
