@@ -1,6 +1,7 @@
 깃허브 주소- https://github.com/yimjongwon/project_7.git <br>
 뱃지 참고- https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#-databases <br>
-아이콘- https://simpleicons.org/?q=sql
+아이콘- https://simpleicons.org/?q=sql <br>
+서식- https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 # 팀 404 찾을 수 없음
 ### 3주차 (2주차 피드백)
 - 작품의 세분화 된 시장분석이 필요하기 때문에
@@ -14,9 +15,6 @@ STP정책 실행
 ![image](https://github.com/user-attachments/assets/2689a46f-3c9d-44e6-a5c4-9c0a69740126)
 ![image](https://github.com/user-attachments/assets/6637b113-6882-4e03-8eed-416f439a4e5a)
 
-
-
-### 4주차 ()
 
 ### 💾 Databases <br>
   <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"/>     <!-- mysql -->
@@ -68,5 +66,73 @@ STP정책 실행
   <img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white" height="30px;"><br>           <!-- 깃허브 -->
 
 
+### 4주차 (3주차 피드백)
+
+<img src="https://github.com/user-attachments/assets/a1c8c825-75b2-4b26-8608-b41010bd1b33" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/997ea896-39f8-47dc-99fe-b2cc50bc7439" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/075a3ea2-5055-4f1d-8ba1-e6504eb184b3" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/980cbf23-2f0a-460e-9ef9-f96535f588af" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/be9220cc-58f4-4a69-af87-eacfe9864c99" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/a954f92d-a4f6-434b-adea-1402baf30f98" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/304423ca-ad67-4d95-a106-9f7996a30d3a" width= "800px;" height="300px;"/><br>
+<img src="https://github.com/user-attachments/assets/bc015444-5fb5-4b3b-905d-56a78ca5cd57" width= "800px;" height="400px;"/><br>
+# -ERD
+
+<img src="https://github.com/user-attachments/assets/3817d9d0-21b3-4f0d-ada2-94989c2f21de" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/1660d788-0a15-4a72-a900-94bab6bbb91f" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/9a9a7761-4a10-41c6-aca9-c60ebd477eab" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/b8b3b57b-5af9-494c-9e51-8a37e0372c95" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/fbb8af86-2e0b-4852-a139-417608c05084" width= "800px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/b00b6bc3-b6c7-4fa2-853c-74f5de74d908" width= "800px;" height="400px;"/><br>
 
 
+### 5주차
+
+![image](https://github.com/user-attachments/assets/0d106e5b-36dc-4d83-a433-c2c31e5ad9f8)
+![image](https://github.com/user-attachments/assets/98146a77-376a-4366-872b-c676c7200ee2)
+![image](https://github.com/user-attachments/assets/7dca419c-8e4b-48a6-ad77-900fbd879853)
+![image](https://github.com/user-attachments/assets/c8939c8b-92d5-479f-91cd-f3927bf5c626)
+![image](https://github.com/user-attachments/assets/339a4171-9c3d-4978-9e22-5e35390ef8a8)
+![image](https://github.com/user-attachments/assets/330fdf9f-67b8-4e50-8f96-4ed7752a5a93)
+![image](https://github.com/user-attachments/assets/e83a2a5e-1ffc-41df-8da3-60cdfcadd969)
+![image](https://github.com/user-attachments/assets/45069f7f-c270-4789-ba01-3275e4315138)
+![image](https://github.com/user-attachments/assets/fdcafff8-4863-4458-86e0-49e08a25cc74)
+![image](https://github.com/user-attachments/assets/6e587ca2-6376-4b9c-aade-67a65904d396)
+![image](https://github.com/user-attachments/assets/42326b6c-7380-4e42-9051-165293021531)
+
+- # 채팅 디렉토리 구조(intelij)
+<img src="https://github.com/user-attachments/assets/25165bb4-22ae-4037-8f91-34ee478bdc55" width= "600px;" height="400px;"/><br>
+
+## 채팅(임시)
+
+<img src="https://github.com/user-attachments/assets/501fe7d8-a8c6-4d8d-8a4b-0d548bf0115b" width= "600px;" height="400px;"/><br>
+<img src="https://github.com/user-attachments/assets/606649cf-0f95-433d-be6d-05a4bc9c144d" height="400px;"/><br>
+
+### 코드(임시)
+
+## chat.html
+![image](https://github.com/user-attachments/assets/9333f728-9e48-447b-b496-e5ca9a733a69)
+## chat.js
+![image](https://github.com/user-attachments/assets/e40e2fb9-bf7e-447d-976a-a816c4f0dc58)
+![image](https://github.com/user-attachments/assets/9b4aa47e-1454-4863-bd09-e80e7e1190be)
+
+## pom.xml
+![image](https://github.com/user-attachments/assets/df927a39-9c5d-42b2-b9d1-18798c8c2d57)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> a07a404f90a9fed4d465883a74e3cd5901d3dfca
