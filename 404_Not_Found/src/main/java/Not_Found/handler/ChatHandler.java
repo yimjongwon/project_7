@@ -8,7 +8,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
 
-public class ChatHandler extends TextWebSocketHandler {
+public class ChatHandler extends TextWebSocketHandler {//채팅 핸들러
 
     private static final Map<String, WebSocketSession> sessions = new ConcurrentHashMap<>();
 
