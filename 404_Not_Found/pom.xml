@@ -85,6 +85,13 @@
 			<scope>test</scope>
 		</dependency>
 
+
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
 		<!-- WebSocket 추가-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
