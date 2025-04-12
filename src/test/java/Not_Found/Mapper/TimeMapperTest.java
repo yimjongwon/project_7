@@ -15,7 +15,7 @@ public class TimeMapperTest {
     private TimeMapper mapper;
 
     @Test
-    public void testGetTime1() {
+    public void testGetTime1(){
         log.info(MyUtil.BLUE + MyUtil.BOLD + "현재 시간 : {}" + MyUtil.END, mapper.getTime1());
     }
 }
