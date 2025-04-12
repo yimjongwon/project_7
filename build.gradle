@@ -44,9 +44,13 @@ dependencies {
     // JSON
     implementation 'org.json:json:20231013'
 
-    // Lombok (Optional)
+    // Lombok 의존성 추가
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // SLF4J 의존성 추가
+    implementation 'org.slf4j:slf4j-api:1.7.32' // 버전은 필요에 따라 조정
+    implementation 'org.slf4j:slf4j-simple:1.7.32' // 로깅을 위한 SLF4J 구현체
 }
 
 tasks.named('test') {
