@@ -14,7 +14,7 @@ function App() {
   const [message, setMessage] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:8080/hello")  // <-- 여기!
+        fetch("http://localhost:8080/")
             .then(res => res.text())
             .then(data => setMessage(data))
             .catch(err => {
