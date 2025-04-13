@@ -1,91 +1,26 @@
 <!doctype html>
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
     <title>채팅</title>
-    <style>
-    .message {
-        display: inline-block; /* ✅ 추가 */
-        padding: 8px 12px;
-        margin: 5px;
-        border-radius: 10px;
-        max-width: 70%;
-        font-family: sans-serif;
-        word-break: break-word;
-        clear: both;
-    }
-
-    .left {
-        background-color: #e6f7ff;
-        float: left;
-    }
-
-    .right {
-        background-color: #d9fdd3;
-        float: right;
-    }
-    </style>
-
+    <link rel="stylesheet" href="/css/chat.css">
 </head>
 <body>
-<h2>채팅기능</h2>
-<div id="chat-window" style="border:1px solid #ccc; height:300px; overflow-y:scroll"></div>
-<input type="text" id="message-input" placeholder="메시지 입력">
-<button id="send-button">전송</button>
 
-<script>
-    const userId = prompt("아이디 입력 (예: student1 또는 admin)");
-    const role = userId.startsWith("admin") ? "admin" : "student";
-    let selectedReceiver = "admin";
+<!-- 💬 채팅 아이콘 버튼 -->
+<div id="chat-toggle" class="chat-toggle">💬</div>
 
-    // ✅ 여기서 placeholder 변경!
-    document.getElementById('message-input').placeholder =
-        (role === 'admin') ? "관리자 메시지 입력" : "메시지 입력";
+<!-- 📦 채팅 박스 -->
+<div id="chat-box" class="chat-box">
+    <div id="chat-window" class="chat-window"></div>
 
-    const socket = new WebSocket(`ws://${location.host}/ws/chat?userId=${userId}&role=${role}`);
+    <!-- 메시지 입력창 + 전송버튼 묶음 -->
+    <div class="input-row">
+        <input type="text" id="message-input" placeholder="메시지 입력" />
+        <button id="send-button">전송</button>
+    </div>
+</div>
 
-    socket.onmessage = function (event) {
-        const chatWindow = document.getElementById('chat-window');
-        const div = document.createElement('div');
-        const message = event.data;
-
-        // 역할에 따라 정렬 클래스 지정
-        if (message.startsWith("[관리자]")) {
-            div.className = "message right";
-        } else {
-            div.className = "message left";
-        }
-
-        div.textContent = message;
-        chatWindow.appendChild(div);
-        chatWindow.scrollTop = chatWindow.scrollHeight; // 자동 스크롤
-    };
-
-    document.getElementById('send-button').addEventListener('click', function () {
-        const input = document.getElementById('message-input');
-        const msg = input.value.trim();
-        if (!msg) return;
-
-        // 관리자는 대상 학생 선택 가능
-        if (role === 'admin') {
-            selectedReceiver = prompt("메시지를 보낼 학생 ID를 입력하세요", selectedReceiver);
-        }
-
-        socket.send(JSON.stringify({
-            sender: userId,
-            receiver: selectedReceiver,
-            content: msg
-        }));
-
-        input.value = '';
-    });
-
-    // 엔터 키로 전송 가능하게 하기
-    document.getElementById('message-input').addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            document.getElementById('send-button').click();
-        }
-    });
-</script>
+<script src="/chat.js"></script>
 </body>
 </html>

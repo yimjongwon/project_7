@@ -20,16 +20,19 @@ public class ChatHandler extends TextWebSocketHandler {
 
     @Override //연결될때 콘솔 출력
     public void afterConnectionEstablished(WebSocketSession session) {
-        String userId = getParam(session, "userId");
-        String role = getParam(session, "role");
+        String userId = getParam(session, "userId").trim(); // 공백 제거
+        String role = getParam(session, "role").trim(); // 공백 제거
+
+        // role 값 확인
+        System.out.println("Received role: " + role);  // 여기서 role 값 확인
 
         userSessions.put(userId, session);
         userRoles.put(userId, role);
 
         if ("admin".equals(role)) {
-            System.out.println("관리자 연결됨: " + userId + " (admin)");
+            System.out.println("admin connect: " + userId + " (admin)");
         } else {
-            System.out.println("학생 연결됨: " + userId + " (student)");
+            System.out.println("stu 학생: " + userId + " (student)");
         }
     }
 
