@@ -157,7 +157,12 @@ STP정책 실행
 ## 보고서
 ![image](https://github.com/user-attachments/assets/110d9073-cc3f-44cc-b76a-b99a0fb4fc27)
 
+## 실시간 문의내역
+![image](https://github.com/user-attachments/assets/9326c782-9e99-474d-ad21-f9bac63afcad)
+![image](https://github.com/user-attachments/assets/695ec9c9-3108-4c2b-a829-13e5be1b3e37)
 
+## 사용자 목록
+![image](https://github.com/user-attachments/assets/3b6f67ac-fa8a-4533-8d34-f2015e4987e9)
 
 
 
