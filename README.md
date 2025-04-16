@@ -122,15 +122,15 @@ STP정책 실행
 
 ## 피그마 디자인
 #메인
-<img src="https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58" width= "800px;" height="400px;"/>
+<img src="https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58" width= "800px;" height="1600px;"/>
 #회원가입,로그인
-<img src="https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957" width= "800px;" height="400px;"/>
+<img src="https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957" width= "800px;" height="1600px;"/>
 #아이디,비번찾기
-<img src="https://github.com/user-attachments/assets/210e3c2d-9e3c-4981-87f3-1be4c022a92b" width= "800px;" height="400px;"/>
+<img src="https://github.com/user-attachments/assets/210e3c2d-9e3c-4981-87f3-1be4c022a92b" width= "800px;" height="1600px;"/>
 #내정보
-<img src="https://github.com/user-attachments/assets/689ffbfa-9f7c-48d2-8676-65bee720ff8f" width= "800px;" height="400px;"/>
+<img src="https://github.com/user-attachments/assets/689ffbfa-9f7c-48d2-8676-65bee720ff8f" width= "800px;" height="1600px;"/>
 #아이디.비번 수정
-<img src="https://github.com/user-attachments/assets/7c55832c-6684-4cd5-8633-0beea7544ffc" width= "800px;" height="400px;"/>
+<img src="https://github.com/user-attachments/assets/7c55832c-6684-4cd5-8633-0beea7544ffc" width= "800px;" height="1600px;"/>
 #404
 <img src="https://github.com/user-attachments/assets/6ec5e632-5cc4-40a1-b6af-6bbaa20259b6" width= "800px;" height="400px;"/>
 #모니터링
