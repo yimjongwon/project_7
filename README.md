@@ -88,7 +88,6 @@ STP정책 실행
 
 ### 5주차
 
-![메인1](https://github.com/user-attachments/assets/53a74b4f-067b-417c-9594-c034ff6d82e8)
 ![image](https://github.com/user-attachments/assets/0d106e5b-36dc-4d83-a433-c2c31e5ad9f8)
 ![image](https://github.com/user-attachments/assets/98146a77-376a-4366-872b-c676c7200ee2)
 ![image](https://github.com/user-attachments/assets/7dca419c-8e4b-48a6-ad77-900fbd879853)
@@ -120,6 +119,17 @@ STP정책 실행
 ## pom.xml
 ![image](https://github.com/user-attachments/assets/df927a39-9c5d-42b2-b9d1-18798c8c2d57)
 
+
+## 피그마 디자인
+![메인1](https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58)
+![회원가입,로그인](https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957)
+![아이디,비번 찾기](https://github.com/user-attachments/assets/210e3c2d-9e3c-4981-87f3-1be4c022a92b)
+![내정보](https://github.com/user-attachments/assets/689ffbfa-9f7c-48d2-8676-65bee720ff8f)
+![아이디,비번 수정](https://github.com/user-attachments/assets/7c55832c-6684-4cd5-8633-0beea7544ffc)
+![404](https://github.com/user-attachments/assets/6ec5e632-5cc4-40a1-b6af-6bbaa20259b6)
+![모니터링](https://github.com/user-attachments/assets/251f8485-4cfb-4e95-9025-81654fd85da0)
+![데이터분석, 보고서](https://github.com/user-attachments/assets/4a08409d-f95b-4a3c-ab4f-c158d823270f)
+![보고서](https://github.com/user-attachments/assets/7acad41c-cba1-473d-898e-b5b88da15646)
 
 
 
