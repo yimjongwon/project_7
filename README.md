@@ -121,15 +121,25 @@ STP정책 실행
 
 
 ## 피그마 디자인
-![메인1](https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58)
-![회원가입,로그인](https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957)
-![아이디,비번 찾기](https://github.com/user-attachments/assets/210e3c2d-9e3c-4981-87f3-1be4c022a92b)
-![내정보](https://github.com/user-attachments/assets/689ffbfa-9f7c-48d2-8676-65bee720ff8f)
-![아이디,비번 수정](https://github.com/user-attachments/assets/7c55832c-6684-4cd5-8633-0beea7544ffc)
-![404](https://github.com/user-attachments/assets/6ec5e632-5cc4-40a1-b6af-6bbaa20259b6)
-![모니터링](https://github.com/user-attachments/assets/251f8485-4cfb-4e95-9025-81654fd85da0)
-![데이터분석, 보고서](https://github.com/user-attachments/assets/4a08409d-f95b-4a3c-ab4f-c158d823270f)
-![보고서](https://github.com/user-attachments/assets/7acad41c-cba1-473d-898e-b5b88da15646)
+#메인
+<img src="https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58" width= "800px;" height="400px;"/>
+#회원가입,로그인
+<img src="https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957" width= "800px;" height="400px;"/>
+#아이디,비번찾기
+<img src="https://github.com/user-attachments/assets/210e3c2d-9e3c-4981-87f3-1be4c022a92b" width= "800px;" height="400px;"/>
+#내정보
+<img src="https://github.com/user-attachments/assets/689ffbfa-9f7c-48d2-8676-65bee720ff8f" width= "800px;" height="400px;"/>
+#아이디.비번 수정
+<img src="https://github.com/user-attachments/assets/7c55832c-6684-4cd5-8633-0beea7544ffc" width= "800px;" height="400px;"/>
+#404
+<img src="https://github.com/user-attachments/assets/6ec5e632-5cc4-40a1-b6af-6bbaa20259b6" width= "800px;" height="400px;"/>
+#모니터링
+<img src="https://github.com/user-attachments/assets/251f8485-4cfb-4e95-9025-81654fd85da0" width= "800px;" height="400px;"/>
+#데이터분석, 기기제어
+<img src="https://github.com/user-attachments/assets/4a08409d-f95b-4a3c-ab4f-c158d823270f" width= "800px;" height="400px;"/>
+#보고서
+<img src="https://github.com/user-attachments/assets/7acad41c-cba1-473d-898e-b5b88da15646" width= "800px;" height="400px;"/>
+
 
 
 
