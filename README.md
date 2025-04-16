@@ -121,7 +121,9 @@ STP정책 실행
 
 
 ## 피그마 디자인
-#메인
+## 메인
+![image](https://github.com/user-attachments/assets/e94e1de0-537a-4b17-a117-a205b86f02c4)
+
 <img src="https://github.com/user-attachments/assets/4514be57-68a5-4bbd-ad22-d94127095c58" width= "800px;" height="1600px;"/>
 #회원가입,로그인
 <img src="https://github.com/user-attachments/assets/8cb8e6e4-39c7-4eb6-ab68-c4eff6fb7957" width= "800px;" height="1600px;"/>
