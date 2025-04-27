@@ -152,6 +152,8 @@ STP정책 실행
 
 ## 데이터분석, 기기제어
 ![image](https://github.com/user-attachments/assets/c6eab0d8-6ea6-41f5-a23b-e3f478fdc731)
+![image](https://github.com/user-attachments/assets/35b5e20b-cd76-404d-b773-11cc1516084e)
+![image](https://github.com/user-attachments/assets/a8fdefaa-131e-4fd4-ae44-d4d744bd1cb6)
 
 
 ## 보고서
