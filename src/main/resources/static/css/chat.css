@@ -64,6 +64,7 @@
     float: right;
 }
 
+
 /* 입력창과 버튼 정렬 및 반응형 개선 */
 .input-row {
     display: flex;
@@ -110,4 +111,19 @@
     .chat-box.show {
         right: 5vw;
     }
+}
+
+/* 채팅창에 드래그된 이미지 표시 */
+.message img {
+    max-width: 100px;      /* 가로 최대 200px */
+    max-height: 100px;     /* 세로 최대 200px 추가 */
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 드래그 앤 드롭 영역 강조 스타일 */
+.chat-window.dragover {
+    border: 2px dashed #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
 }

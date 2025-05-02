@@ -50,6 +50,12 @@ dependencies {
 
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+    // MQTT 의존성 추가
+    implementation 'org.springframework.integration:spring-integration-mqtt:5.5.7'
+
+    // JSON 처리 라이브러리 (필요시)
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
 }
 
 tasks.named('test') {

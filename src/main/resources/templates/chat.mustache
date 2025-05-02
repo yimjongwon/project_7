@@ -12,6 +12,8 @@
 
 <!-- 📦 채팅 박스 -->
 <div id="chat-box" class="chat-box">
+
+
     <div id="chat-window" class="chat-window"></div>
 
     <!-- 메시지 입력창 + 전송버튼 묶음 -->
@@ -19,6 +21,13 @@
         <input type="text" id="message-input" placeholder="메시지 입력" />
         <button id="send-button">전송</button>
     </div>
+
+    <!-- 이미지 업로드 기능 -->
+    <div class="image-upload">
+        <input type="file" id="image-upload-input" accept="image/*" />
+        <div id="previewArea"></div> <!-- 이미지 미리보기 영역 -->
+    </div>
+
 </div>
 
 <script src="/chat.js"></script>

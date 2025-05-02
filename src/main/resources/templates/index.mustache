@@ -3,9 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
+
 </head>
 <body>
-	<h1>index</h1>
-	<hr>
+<h1>index</h1>
+{{#sensor}}
+    <h2 id="pm1_0">{{pm1_0}}</h2>
+    <h2 id="pm2_5">{{pm2_5}}</h2>
+    <h2 id="pm10">{{pm10}}</h2>
+    <h2 id="current">{{current}}</h2>
+    <h2 id="temp">{{temp}}</h2>
+    <h2 id="hum">{{hum}}</h2>
+
+    <!-- mode는 null 체크 및 기본 메시지 처리 -->
+    {{#mode}}
+        <h2 id="mode">{{mode}}</h2>
+    {{/mode}}
+    {{^mode}}
+        <h2 id="mode">데이터가 없습니다.</h2>
+    {{/mode}}
+
+    <h2 id="speed">{{speed}}</h2>
+    <hr>
+{{/sensor}}
+
+
+<script src="/sensor.js"></script>
 </body>
 </html>
