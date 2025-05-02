@@ -107,6 +107,12 @@ STP정책 실행
 
 <img src="https://github.com/user-attachments/assets/501fe7d8-a8c6-4d8d-8a4b-0d548bf0115b" width= "600px;" height="400px;"/><br>
 <img src="https://github.com/user-attachments/assets/606649cf-0f95-433d-be6d-05a4bc9c144d" height="400px;"/><br>
+![image](https://github.com/user-attachments/assets/2b6a17e3-446f-483e-bc2b-02ce4230be0f)<br>
+![image](https://github.com/user-attachments/assets/2c421a50-b71a-459e-b1c8-21ec9a2da5af)<br>
+![image](https://github.com/user-attachments/assets/03302ebb-ecdd-4195-9ae9-ec340a28d19a)
+
+
+
 
 ### 코드(임시)
 
@@ -119,6 +125,52 @@ STP정책 실행
 ## pom.xml
 ![image](https://github.com/user-attachments/assets/df927a39-9c5d-42b2-b9d1-18798c8c2d57)
 
+
+## 피그마 디자인
+## 메인
+![image](https://github.com/user-attachments/assets/e94e1de0-537a-4b17-a117-a205b86f02c4)
+![image](https://github.com/user-attachments/assets/13e10bbb-372e-4584-9731-f873347265d0)
+
+
+## 회원가입,로그인
+![image](https://github.com/user-attachments/assets/10ff9b39-5e24-471d-9fd4-f5c5a19935e8)
+
+
+## 아이디,비번찾기
+![image](https://github.com/user-attachments/assets/71d5b9cd-6a16-4199-ae15-a2970ce318ad)
+
+
+## 내정보
+![image](https://github.com/user-attachments/assets/eedb1b38-564c-4a87-ad14-04ac9804d1a9)
+
+
+## 아이디.비번 수정
+![image](https://github.com/user-attachments/assets/12d2c5d0-d057-4533-bb19-e1e17a56d51c)
+
+
+## 404
+![image](https://github.com/user-attachments/assets/282b8601-de85-4f40-b0ea-3589f5ff4f86)
+
+
+## 모니터링
+![image](https://github.com/user-attachments/assets/394f1004-18dc-4204-ae55-5e3fb764e54d)
+
+
+## 데이터분석, 기기제어
+![image](https://github.com/user-attachments/assets/c6eab0d8-6ea6-41f5-a23b-e3f478fdc731)
+![image](https://github.com/user-attachments/assets/35b5e20b-cd76-404d-b773-11cc1516084e)
+![image](https://github.com/user-attachments/assets/a8fdefaa-131e-4fd4-ae44-d4d744bd1cb6)
+
+
+## 보고서
+![image](https://github.com/user-attachments/assets/110d9073-cc3f-44cc-b76a-b99a0fb4fc27)
+
+## 실시간 문의내역
+![image](https://github.com/user-attachments/assets/9326c782-9e99-474d-ad21-f9bac63afcad)
+![image](https://github.com/user-attachments/assets/695ec9c9-3108-4c2b-a829-13e5be1b3e37)
+
+## 사용자 목록
+![image](https://github.com/user-attachments/assets/3b6f67ac-fa8a-4533-8d34-f2015e4987e9)
 
 
 
