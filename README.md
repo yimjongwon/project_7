@@ -36,3 +36,10 @@ pip install paho-mqtt pyserial
 ```bash
 python3 hiveMQ.py
 ```
+
+---
+### 데이터 전송화 화면
+(raspi 화면)
+![화면 캡처 2025-05-05 153100](https://github.com/user-attachments/assets/38ac20d3-e758-417e-90f6-01cffc79758e)
+(hiveMQ 화면)
+![화면 캡처 2025-05-05 153126](https://github.com/user-attachments/assets/9600fd52-5a29-48de-8599-6c2a352312cb)
