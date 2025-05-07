@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import "./css/Main.css";
 
 function Main({message}) {
+=======
+import { useNavigate } from "react-router-dom";
+import "./css/Main.css";
+
+function Main({ isLoggedIn, userNickname, message }) {
+
+    const navigate = useNavigate();
+
+>>>>>>> minseo
     return (
         <div className="container1">
             <div className="main-banner">
@@ -35,12 +45,36 @@ function Main({message}) {
                     </div> {/* outdoor_content */}
                 </div> {/* container3 */}
 
+<<<<<<< HEAD
                 <div className="container3" id="login_container">
                     <p className="login-text">로그인을 해주세요</p>
                     <div className="outer_button">
                         <button className="login_button">로그인 하기</button>
                     </div>
                 </div> {/* login_container */}
+=======
+                {isLoggedIn ? (
+                    <div className="container3 main-login-container">
+                        <div className="welcome-box">
+                            <p className="welcome-message">{userNickname}님, 반갑습니다 😊</p>
+                        </div>
+                    </div>
+                ) : (
+                    <div className="container3 main-login-container">
+                        <div className="welcome-box">
+                            <p className="welcome-message">로그인이 필요합니다</p>
+                            <button
+                                className="login-action-button"
+                                onClick={() => navigate("/login")}
+                            >
+                                로그인 하러가기
+                            </button>
+                        </div>
+                    </div>
+                )}
+
+
+>>>>>>> minseo
 
             </div> {/* container2 */}
 

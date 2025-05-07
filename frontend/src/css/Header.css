@@ -31,6 +31,7 @@
 }
 
 .login-btn {
+<<<<<<< HEAD
     background: white;
     color: black;
     padding: 8px 15px;
@@ -42,3 +43,21 @@
 .login-btn:hover {
     background: #ddd;
 }
+=======
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ddd;
+}
+
+>>>>>>> minseo
