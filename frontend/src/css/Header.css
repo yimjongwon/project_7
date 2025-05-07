@@ -1,3 +1,68 @@
+/*.header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    background-color: #337EFF;*/
+/*    padding: 15px 30px;*/
+/*    color: white;*/
+/*}*/
+
+/*.logo {*/
+/*    font-size: 22px;*/
+/*    font-weight: bold;*/
+/*    color: #dddddd;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.nav {*/
+/*    display: flex;*/
+/*    gap: 90px;*/
+/*    margin-left: 30px;*/
+/*}*/
+
+/*.nav a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.nav a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*.login-btn {*/
+/*<<<<<<< HEAD*/
+/*    background: white;*/
+/*    color: black;*/
+/*    padding: 8px 15px;*/
+/*    border-radius: 20px;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.login-btn:hover {*/
+/*    background: #ddd;*/
+/*}*/
+/*=======*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    padding: 8px 15px;*/
+/*    border: none;*/
+/*    border-radius: 20px;*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    font-size: 14px;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.login-btn:hover {*/
+/*    background-color: #ddd;*/
+/*}*/
+
+/*>>>>>>> minseo*/
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -31,14 +96,18 @@
 }
 
 .login-btn {
-    background: white;
+    background-color: white;
     color: black;
     padding: 8px 15px;
+    border: none;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
-    background: #ddd;
+    background-color: #ddd;
 }
