@@ -9,7 +9,10 @@ function Monitoring_outdoor_default(){
     const [humidity, setHumidity] = useState("-");
     const [weatherStatus, setWeatherStatus] = useState("-");
     const [updateTime, setUpdateTime] = useState("-");
+    const [pm10, setPm10] = useState("-");
+    const [pm10Grade, setPm10Grade] = useState("-");
 
+    //온도와 습도 가져오기 위한 useEffect
     useEffect(() => {
         fetch("http://localhost:8080/weather/outdoor?nx=58&ny=125")
             .then(res => res.text())
@@ -31,6 +34,7 @@ function Monitoring_outdoor_default(){
             });
     }, []);
 
+    //업데이트 시간 가져오기 위한 useEffect
     useEffect(() => {
         fetch("http://localhost:8080/weather/outdoor?nx=58&ny=125")
             .then(res => res.text())
@@ -54,6 +58,24 @@ function Monitoring_outdoor_default(){
                     String(now.getHours()).padStart(2, '0') + ":" +
                     String(now.getMinutes()).padStart(2, '0');
                 setUpdateTime(formatted);
+            });
+    }, []);
+
+    //미세먼지 데이터 옮기기 위한 useEfect
+    useEffect(() => {
+        fetch("http://localhost:8080/api/dust")
+            .then(res => res.json())
+            .then(data => {
+                setPm10(data.pm10Value);
+                const grade = data.pm10Grade;
+                if (grade === "1") setPm10Grade("좋음");
+                else if (grade === "2") setPm10Grade("보통");
+                else if (grade === "3") setPm10Grade("나쁨");
+                else if (grade === "4") setPm10Grade("매우 나쁨");
+                else setPm10Grade("정보 없음");
+            })
+            .catch(err => {
+                console.error("미세먼지 정보 불러오기 실패:", err);
             });
     }, []);
 
@@ -91,11 +113,11 @@ function Monitoring_outdoor_default(){
                 <div className="status-box">
                     <div className="status-item">
                         <span>미세먼지</span>
-                        <span>240ug</span>
+                        <span>{pm10}㎍/m³</span>
                     </div>
                     <div className="status-item">
                         <span>상태</span>
-                        <span>정상</span>
+                        <span>{pm10Grade}</span>
                     </div>
                 </div>
             </div>
