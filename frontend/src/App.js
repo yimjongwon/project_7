@@ -151,7 +151,7 @@ function App() {
 
                 <Routes>
                     <Route path="/" element={<Main message={message} />} />
-                    <Route path="/login" element={<Login onLogin={handleLogin} />} />
+                    <Route path="/login" element={<Login handleLogin={handleLogin} />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/dataanalysis" element={<DataAnalysis />} />
                     <Route path="/monitoring_indoor" element={<Monitoring_indoor />} />
