@@ -160,7 +160,8 @@ STP정책 실행
 ![image](https://github.com/user-attachments/assets/c6eab0d8-6ea6-41f5-a23b-e3f478fdc731)
 ![image](https://github.com/user-attachments/assets/35b5e20b-cd76-404d-b773-11cc1516084e)
 ![image](https://github.com/user-attachments/assets/a8fdefaa-131e-4fd4-ae44-d4d744bd1cb6)
-
+![image](https://github.com/user-attachments/assets/9a451010-f812-4f06-9534-1f96bce50c75)
+![image](https://github.com/user-attachments/assets/bb895413-7817-476c-a3a3-7934a439164d)
 
 ## 보고서
 ![image](https://github.com/user-attachments/assets/110d9073-cc3f-44cc-b76a-b99a0fb4fc27)
