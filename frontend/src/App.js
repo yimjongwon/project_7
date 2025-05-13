@@ -6,18 +6,29 @@ function App() {
     const [message, setMessage] = useState("");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userNickname, setUserNickname] = useState("");
+    const [isAdmin, setIsAdmin] = useState(false);
 
-    const handleLogin = (nickname) => {
+    const handleLogin = (nickname, isAdminValue) => {
         setIsLoggedIn(true);
         setUserNickname(nickname);
+        setIsAdmin(isAdminValue);
     };
 
     const handleLogout = () => {
         setIsLoggedIn(false);
         setUserNickname("");
+        setIsAdmin(false);
+        localStorage.removeItem("userInfo");
     };
 
     useEffect(() => {
+        const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+        if (userInfo) {
+            setIsLoggedIn(true);
+            setUserNickname(userInfo.nickname);
+            setIsAdmin(userInfo.isAdmin); // 추가
+        }
+        //서버 연결 테스트
         fetch("http://localhost:8080/")
             .then(res => res.text())
             .then(data => setMessage(data))
@@ -32,6 +43,7 @@ function App() {
             message={message}
             isLoggedIn={isLoggedIn}
             userNickname={userNickname}
+            isAdmin={isAdmin}
             handleLogin={handleLogin}
             handleLogout={handleLogout}
         />

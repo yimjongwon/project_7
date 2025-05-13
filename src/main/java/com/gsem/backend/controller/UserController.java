@@ -22,7 +22,7 @@ public class UserController {
     // 회원가입
     @PostMapping("/signup")
     public ResponseEntity<String> signup(@RequestBody UserDTO userDTO) {
-        String response = userService.register(userDTO);  // UserDTO를 User 엔티티로 변환 후 저장
+        String response = userService.register(userDTO);
         return ResponseEntity.ok(response);
     }
 
@@ -34,6 +34,7 @@ public class UserController {
             User user = userOpt.get();
             Map<String, Object> response = new HashMap<>();
             response.put("nickname", user.getNickname());
+            response.put("isAdmin", user.getIsAdmin());
             return ResponseEntity.ok(response);
         } else {
             Map<String, String> error = new HashMap<>();

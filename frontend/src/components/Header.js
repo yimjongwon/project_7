@@ -14,6 +14,7 @@ function Header({ isLoggedIn, handleLogout }) {
                 <Link to="/" style={{ textDecoration: 'none' }}>보고서</Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>기기 제어</Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>내정보</Link>
+                <Link to="/chat" style={{ textDecoration: 'none' }}>실시간 문의</Link>
             </nav>
 
             {isLoggedIn ? (

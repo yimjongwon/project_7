@@ -12,7 +12,7 @@ function Login({ handleLogin }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrorMessage("");
-        // 서버에 로그인 요청
+
         try {
             const response = await fetch("http://localhost:8080/api/user/login", {
                 method: "POST",
@@ -22,14 +22,16 @@ function Login({ handleLogin }) {
                 body: JSON.stringify({ id: id.trim(), password: password.trim() })
             });
 
-            const result = await response.json(); // JSON 응답 받기
+            const result = await response.json();
 
             if (response.ok) {
-                if (result.nickname) {
-                    handleLogin(result.nickname); // 닉네임 전달
+                const { nickname, isAdmin } = result;
+
+                if (nickname !== undefined && isAdmin !== undefined) {
+                    handleLogin(nickname, isAdmin);
                     navigate("/");
                 } else {
-                    setErrorMessage("로그인 성공했지만 닉네임이 없습니다.");
+                    setErrorMessage("로그인 성공했지만 사용자 정보가 누락되었습니다.");
                 }
             } else {
                 setErrorMessage(result.message || "아이디 또는 비밀번호가 틀렸습니다.");
