@@ -163,6 +163,22 @@ STP정책 실행
 ![image](https://github.com/user-attachments/assets/9a451010-f812-4f06-9534-1f96bce50c75)
 ![image](https://github.com/user-attachments/assets/bb895413-7817-476c-a3a3-7934a439164d)
 
+## 센서 DB
+-- SAFE 모드 해제
+SET SQL_SAFE_UPDATES = 0;
+drop table sensor_data;
+
+show tables;
+DESC sensor_data;
+ALTER TABLE sensor_data MODIFY COLUMN timestamp DATETIME(0); /* 초까지만 저장*/
+
+select * from sensor_data;
+delete from sensor_data;
+
+![image](https://github.com/user-attachments/assets/96910e8a-5952-428e-b07e-0328d9e10d1b)
+
+
+
 ## 보고서
 ![image](https://github.com/user-attachments/assets/110d9073-cc3f-44cc-b76a-b99a0fb4fc27)
 
