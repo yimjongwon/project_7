@@ -8,22 +8,17 @@ const AdminChat = () => {
     const [selectedUser, setSelectedUser] = useState('');
     const [input, setInput] = useState('');
     const [userList, setUserList] = useState([]);
-
     const clientRef = useRef(null);
-    const connectedRef = useRef(false); // 중복 연결 방지용
+    const chatBoxRef = useRef(null);
 
     useEffect(() => {
-        if (connectedRef.current) {
-            console.log('[ADMIN] 이미 연결됨');
-            return;
-        }
+        if (clientRef.current) return;
 
         const socket = new SockJS('http://localhost:8080/ws');
         const client = over(socket);
 
         client.connect({}, () => {
             console.log('[ADMIN] WebSocket Connected');
-
             client.subscribe('/topic/messages/admin', (msg) => {
                 const newMsg = JSON.parse(msg.body);
                 console.log('[ADMIN] 수신된 메시지:', newMsg);
@@ -39,7 +34,6 @@ const AdminChat = () => {
             });
 
             clientRef.current = client;
-            connectedRef.current = true;
         });
 
         return () => {
@@ -48,28 +42,41 @@ const AdminChat = () => {
                     console.log('[ADMIN] WebSocket Disconnected');
                 });
                 clientRef.current = null;
-                connectedRef.current = false;
             }
         };
     }, []);
 
-    const sendMessage = () => {
-        if (!clientRef.current || !clientRef.current.connected) {
-            console.warn("WebSocket 연결이 아직 완료되지 않았습니다.");
-            return;
+    useEffect(() => {
+        if (chatBoxRef.current) {
+            chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
         }
+    }, [messages, selectedUser]);
 
+    const formatTimestamp = (date) => {
+        return `${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${String(date.getMinutes()).padStart(2, '0')}`;
+    };
+
+    const sendMessage = () => {
+        if (!clientRef.current || !clientRef.current.connected) return;
         if (input.trim() === '' || selectedUser === '') return;
 
         const message = {
             senderId: 'admin',
             receiverId: selectedUser,
-            content: input
+            content: input,
+            timestamp: new Date().toISOString()
         };
 
         clientRef.current.send('/app/admin-to-user', {}, JSON.stringify(message));
         setMessages(prev => [...prev, message]);
         setInput('');
+    };
+
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sendMessage();
+        }
     };
 
     return (
@@ -89,15 +96,15 @@ const AdminChat = () => {
                     ))}
                 </div>
                 <div className="admin-chat-box">
-                    <div className="chat-history">
+                    <div className="chat-history" ref={chatBoxRef}>
                         {messages
                             .filter(msg => msg.senderId === selectedUser || msg.receiverId === selectedUser)
                             .map((msg, idx) => (
-                                <div
-                                    key={idx}
-                                    className={msg.senderId === 'admin' ? 'admin-message' : 'user-message'}
-                                >
-                                    <b>{msg.senderId}:</b> {msg.content}
+                                <div key={idx}>
+                                    <div className="timestamp-admin">{formatTimestamp(new Date(msg.timestamp || Date.now()))}</div>
+                                    <div className={msg.senderId === 'admin' ? 'admin-message' : 'user-message'}>
+                                        <b>{msg.senderId}:</b> {msg.content}
+                                    </div>
                                 </div>
                             ))}
                     </div>
@@ -105,6 +112,7 @@ const AdminChat = () => {
                         <input
                             value={input}
                             onChange={e => setInput(e.target.value)}
+                            onKeyDown={handleKeyPress}
                             placeholder="메시지 입력..."
                         />
                         <button onClick={sendMessage}>전송</button>

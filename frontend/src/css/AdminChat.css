@@ -76,7 +76,7 @@
     border-radius: 10px;
     align-self: flex-end;
     max-width: 70%;
-    text-align: right;
+    text-align: left;
 }
 
 .user-message {
@@ -114,4 +114,10 @@
 
 .chat-input button:hover {
     background-color: #285fd1;
+}
+
+.timestamp-admin {
+    font-size: 0.75rem;
+    color: gray;
+    margin-bottom: 2px;
 }
