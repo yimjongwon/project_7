@@ -1,28 +1,53 @@
 package com.gsem.backend.controller;
 
 import com.gsem.backend.dto.ChatMsgDTO;
+import com.gsem.backend.entity.ChatMessage;
+import com.gsem.backend.service.ChatMessageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.*;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
+
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZoneId;
 
 @Controller
 public class ChatController {
 
     private final SimpMessagingTemplate messagingTemplate;
+    private final ChatMessageService chatMessageService;
 
-    public ChatController(SimpMessagingTemplate messagingTemplate) {
+    public ChatController(SimpMessagingTemplate messagingTemplate, ChatMessageService chatMessageService) {
         this.messagingTemplate = messagingTemplate;
+        this.chatMessageService = chatMessageService;
     }
 
-    // 일반 유저가 관리자에게 메시지 전송
     @MessageMapping("/user-to-admin")
-    public void sendToAdmin(@Payload ChatMsgDTO message) {
-        messagingTemplate.convertAndSend("/topic/messages/admin", message);
+    public void sendToAdmin(@Payload ChatMsgDTO dto) {
+        // DB 저장
+        chatMessageService.save(convertToEntity(dto));
+        // 실시간 전송
+        messagingTemplate.convertAndSend("/topic/messages/admin", dto);
     }
 
-    // 관리자가 특정 유저에게 메시지 전송
     @MessageMapping("/admin-to-user")
-    public void sendToUser(@Payload ChatMsgDTO message) {
-        messagingTemplate.convertAndSendToUser(message.getReceiverId(), "/queue/messages", message);
+    public void sendToUser(@Payload ChatMsgDTO dto) {
+        chatMessageService.save(convertToEntity(dto));
+        messagingTemplate.convertAndSendToUser(dto.getReceiverId(), "/queue/messages", dto);
+    }
+
+    private ChatMessage convertToEntity(ChatMsgDTO dto) {
+        ChatMessage msg = new ChatMessage();
+        msg.setSenderId(dto.getSenderId());
+        msg.setReceiverId(dto.getReceiverId());
+        msg.setContent(dto.getContent());
+        msg.setTimestamp(
+                dto.getTimestamp() != null
+                        ? dto.getTimestamp()
+                        : OffsetDateTime.now(ZoneId.of("Asia/Seoul"))
+        );
+        return msg;
     }
 }
+

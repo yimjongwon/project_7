@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Header.css';
 
-function Header({ isLoggedIn, handleLogout }) {
+function Header({ isLoggedIn, handleLogout, hasNewMessage }) {
+    console.log("🔍 Header 렌더링 - hasNewMessage:", hasNewMessage);
+
     return (
         <header className="header">
             <Link to="/" style={{ textDecoration: 'none' }}>
@@ -14,7 +16,11 @@ function Header({ isLoggedIn, handleLogout }) {
                 <Link to="/" style={{ textDecoration: 'none' }}>보고서</Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>기기 제어</Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>내정보</Link>
-                <Link to="/chat" style={{ textDecoration: 'none' }}>실시간 문의</Link>
+                <Link to="/chat" style={{ textDecoration: 'none' }}>
+                    실시간 문의
+                    {hasNewMessage && <span style={{ color: 'red', fontSize: '18px', marginLeft: '5px' }}>N</span>}
+                </Link>
+
             </nav>
 
             {isLoggedIn ? (
@@ -24,7 +30,6 @@ function Header({ isLoggedIn, handleLogout }) {
                     <button className="login-btn">LOGIN</button>
                 </Link>
             )}
-
         </header>
     );
 }

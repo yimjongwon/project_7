@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AdminChat from '../Chat/AdminChat';
 import UserChat from '../Chat/UserChat';
+import { useNavigate } from "react-router-dom";
+import '../css/LoginBox.css';
 
-function ChatPage({ isAdmin }) {
-    return isAdmin ? <AdminChat /> : <UserChat />;
+function ChatPage({ isLoggedIn, isAdmin, userNickname, onEnterChatPage }) {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        onEnterChatPage();
+    }, [onEnterChatPage]);
+
+    if (!isLoggedIn) {
+        return (
+            <div className="logincontainer">
+                <div className="welcomebox">
+                    <p className="welcomemessage">로그인이 필요합니다</p>
+                    <button
+                        className="loginactionbutton"
+                        onClick={() => navigate("/login")}
+                    >
+                        로그인 하러가기
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
+    return isAdmin ? (
+        <AdminChat userNickname={userNickname} />
+    ) : (
+        <UserChat userNickname={userNickname} />
+    );
 }
 
 export default ChatPage;

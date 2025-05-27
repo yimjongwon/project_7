@@ -1,4 +1,3 @@
-// SecurityConfig.java
 package com.gsem.backend.config;
 
 import org.springframework.context.annotation.Bean;

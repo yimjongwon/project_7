@@ -6,16 +6,33 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FindId from "./Login/FindId";
 import FindPassword from "./Login/FindPassword";
-import ChatUserPage from "./Chat/UserChat";
-import ChatAdminPage from "./Chat/AdminChat";
+import ChatPage from "./Chat/ChatPage";
+import { useEffect, useState } from "react";
 
-function AppRouter({ message, isLoggedIn, userNickname, isAdmin, handleLogin, handleLogout }) {
+function AppRouter({ message, isLoggedIn, userNickname, isAdmin, handleLogin, handleLogout, hasNewMessage, setHasNewMessage }) {
+
+    useEffect(() => {
+        const socket = new WebSocket("ws://localhost:8080/ws");
+        socket.onopen = () => {
+            console.log("[AppRouter] WebSocket connected");
+        };
+        socket.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            console.log("📩 WebSocket 수신 메시지:", data);
+            if (data && (data.receiverId === 'admin' || data.receiverId === userNickname)) {
+                setHasNewMessage(true);
+            }
+        };
+        return () => socket.close();
+    }, [userNickname, setHasNewMessage]);
+
     return (
         <Router>
-            <Header isLoggedIn={isLoggedIn}
-                    userNickname={userNickname}
-                    isAdmin={isAdmin}
-                    handleLogout={handleLogout}
+            <Header
+                isLoggedIn={isLoggedIn}
+                userNickname={userNickname}
+                handleLogout={handleLogout}
+                hasNewMessage={hasNewMessage}
             />
 
             <Routes>
@@ -33,16 +50,18 @@ function AppRouter({ message, isLoggedIn, userNickname, isAdmin, handleLogin, ha
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/find-id" element={<FindId />} />
                 <Route path="/find-password" element={<FindPassword />} />
-
-                {/* 채팅: 로그인된 경우 관리자 여부에 따라 분기 */}
-                {isLoggedIn && isAdmin && (
-                    <Route path="/chat" element={<ChatAdminPage userNickname={userNickname} />} />
-                )}
-                {isLoggedIn && !isAdmin && (
-                    <Route path="/chat" element={<ChatUserPage userNickname={userNickname} />} />
-                )}
+                <Route
+                    path="/chat"
+                    element={
+                        <ChatPage
+                            isLoggedIn={isLoggedIn}
+                            isAdmin={isAdmin}
+                            userNickname={userNickname}
+                            onEnterChatPage={() => setHasNewMessage(false)}
+                        />
+                    }
+                />
             </Routes>
-
             <Footer />
         </Router>
     );

@@ -10,6 +10,16 @@ function UserChat({ userNickname }) {
     const chatBoxRef = useRef(null);
 
     useEffect(() => {
+        // 과거 메시지 로드
+        fetch(`http://localhost:8080/api/chat/history/${userNickname}`)
+            .then(res => res.json())
+            .then(data => setMessages(Array.isArray(data) ? data : []))
+            .catch(err => {
+                console.error('채팅 기록 불러오기 실패:', err);
+                setMessages([]);
+            });
+
+        // WebSocket 연결
         const socket = new SockJS(`http://localhost:8080/ws?userId=${userNickname}`);
         const stompClient = new Client({
             webSocketFactory: () => socket,
@@ -30,37 +40,41 @@ function UserChat({ userNickname }) {
     }, []);
 
     useEffect(() => {
-        if (chatBoxRef.current) {
-            chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
-        }
+        chatBoxRef.current?.scrollTo(0, chatBoxRef.current.scrollHeight);
     }, [messages]);
 
     const formatTimestamp = (timestamp) => {
-        const date = new Date(timestamp || Date.now());
+        const date = new Date(timestamp);
         return `${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}:${String(date.getMinutes()).padStart(2, '0')}`;
     };
 
-    const sendMessage = () => {
+    const sendMessage = async () => {
         if (client && input.trim()) {
             const message = {
                 senderId: userNickname,
                 receiverId: 'admin',
                 content: input,
-                timestamp: Date.now()
+                timestamp: new Date().toISOString()
             };
+
+            try {
+                // DB 저장
+                await fetch('http://localhost:8080/api/chat/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(message)
+                });
+            } catch (error) {
+                console.error('메시지 저장 실패:', error);
+            }
+
             client.publish({
                 destination: '/app/user-to-admin',
                 body: JSON.stringify(message)
             });
+
             setMessages(prev => [...prev, message]);
             setInput('');
-        }
-    };
-
-    const handleKeyDown = (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            sendMessage();
         }
     };
 
@@ -82,7 +96,7 @@ function UserChat({ userNickname }) {
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={handleKeyDown}
+                    onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
                     placeholder="메시지를 입력하세요..."
                 />
                 <button onClick={sendMessage}>전송</button>

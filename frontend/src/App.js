@@ -7,6 +7,7 @@ function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userNickname, setUserNickname] = useState("");
     const [isAdmin, setIsAdmin] = useState(false);
+    const [hasNewMessage, setHasNewMessage] = useState(false);
 
     const handleLogin = (nickname, isAdminValue) => {
         setIsLoggedIn(true);
@@ -46,6 +47,8 @@ function App() {
             isAdmin={isAdmin}
             handleLogin={handleLogin}
             handleLogout={handleLogout}
+            hasNewMessage={hasNewMessage}
+            setHasNewMessage={setHasNewMessage}
         />
     );
 }
