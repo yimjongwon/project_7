@@ -8,23 +8,45 @@ import FindId from "./Login/FindId";
 import FindPassword from "./Login/FindPassword";
 import ChatPage from "./Chat/ChatPage";
 import { useEffect, useState } from "react";
+import SockJS from 'sockjs-client';
+import { over } from 'stompjs';
 
 function AppRouter({ message, isLoggedIn, userNickname, isAdmin, handleLogin, handleLogout, hasNewMessage, setHasNewMessage }) {
 
     useEffect(() => {
-        const socket = new WebSocket("ws://localhost:8080/ws");
-        socket.onopen = () => {
-            console.log("[AppRouter] WebSocket connected");
-        };
-        socket.onmessage = (event) => {
-            const data = JSON.parse(event.data);
-            console.log("📩 WebSocket 수신 메시지:", data);
-            if (data && (data.receiverId === 'admin' || data.receiverId === userNickname)) {
-                setHasNewMessage(true);
+        if (!userNickname) return;
+
+        const socket = new SockJS(`http://localhost:8080/ws?userId=${userNickname}`);
+        const client = over(socket);
+        console.log("User nickname for WebSocket:", userNickname);
+
+        client.connect({}, () => {
+            console.log('[AppRouter] STOMP connected');
+
+            // 관리자용 메시지 수신
+            if (isAdmin) {
+                client.subscribe('/topic/messages/admin', (msg) => {
+                    const message = JSON.parse(msg.body);
+                    setHasNewMessage(true);
+                });
+            }
+
+            // 유저용 메시지 수신
+            else {
+                client.subscribe('/user/queue/messages', (msg) => {
+                    const message = JSON.parse(msg.body);
+                    console.log('[AppRouter] 유저가 메시지를 수신했습니다:', message);
+                    setHasNewMessage(true);
+                });
+            }
+        });
+
+        return () => {
+            if (client.connected) {
+                client.disconnect();
             }
         };
-        return () => socket.close();
-    }, [userNickname, setHasNewMessage]);
+    }, [isAdmin, userNickname, setHasNewMessage]);
 
     return (
         <Router>
@@ -58,6 +80,7 @@ function AppRouter({ message, isLoggedIn, userNickname, isAdmin, handleLogin, ha
                             isAdmin={isAdmin}
                             userNickname={userNickname}
                             onEnterChatPage={() => setHasNewMessage(false)}
+                            setHasNewMessage={setHasNewMessage}
                         />
                     }
                 />

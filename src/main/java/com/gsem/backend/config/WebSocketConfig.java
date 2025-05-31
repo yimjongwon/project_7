@@ -28,17 +28,16 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                 .setHandshakeHandler(new DefaultHandshakeHandler() {
                     @Override
                     protected Principal determineUser(ServerHttpRequest request, WebSocketHandler wsHandler, Map<String, Object> attributes) {
-                        // 쿼리 파라미터로 userId 받아서 Principal로 등록
                         String userId = null;
                         if (request instanceof ServletServerHttpRequest servletRequest) {
                             userId = servletRequest.getServletRequest().getParameter("userId");
                         }
-                        if (userId == null) userId = "anonymous"; // fallback
+                        if (userId == null) userId = "anonymous";
                         String finalUserId = userId;
                         return () -> finalUserId;
                     }
                 })
-                .setAllowedOriginPatterns("*")
+                .setAllowedOrigins("http://localhost:3000")
                 .withSockJS();
     }
 }

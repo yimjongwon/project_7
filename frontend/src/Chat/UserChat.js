@@ -24,6 +24,7 @@ function UserChat({ userNickname }) {
         const stompClient = new Client({
             webSocketFactory: () => socket,
             onConnect: () => {
+                console.log("[UserChat] WebSocket connected");
                 stompClient.subscribe(`/user/queue/messages`, (msg) => {
                     const received = JSON.parse(msg.body);
                     setMessages(prev => [...prev, received]);
