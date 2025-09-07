@@ -190,9 +190,50 @@ delete from sensor_data;
 ![image](https://github.com/user-attachments/assets/3b6f67ac-fa8a-4533-8d34-f2015e4987e9)
 
 
+# AWS 배포하는방법
+1. 프론트엔드 서버  배포
+- ㅁㅁㅁㅁㅁ
+  
+2. 백엔드 서버 배포
+- Spring Boot 애플리케이션 빌드-> .jar
+  <img width="800" height="680" alt="image" src="https://github.com/user-attachments/assets/851262d7-0588-4506-97c0-89c954a13e73" /> <br>
+  --------> 문제시
+  <img width="628" height="269" alt="image" src="https://github.com/user-attachments/assets/652c5492-2cf2-46a9-94f4-db383221d805" />
+- 배포 진행
+  1. EC2 인스턴스 생성: AWS 콘솔에서 인스턴스를 생성하고 SSH로 접속합니다.
+  2. Java 설치: 서버에 Java가 설치되어 있는지 확인하고, 필요시 설치합니다.
+  3. .jar 파일 업로드: scp 명령어나 FTP 클라이언트를 사용하여 로컬에서 생성한 .jar 파일을 EC2 서버로 업로드합니다.
+  4.애플리케이션 실행: java -jar your_app.jar 명령어를 사용하여 애플리케이션을 실행합니다. 이 때 nohup이나 Systemd를 이용하면 서버가 종료되어도 백그라운드에서 실행 상태를 유지할 수 있습니다.
+
+- EC2 인스턴스 생성-> .pem
+  <img width="1929" height="1372" alt="image" src="https://github.com/user-attachments/assets/0f491ebb-31f9-44da-b5fc-f9bbc737869f" />
+  <img width="1937" height="1407" alt="image" src="https://github.com/user-attachments/assets/3090fe12-0c2c-408b-a35b-6e17f01ac680" />
+  <img width="776" height="191" alt="image" src="https://github.com/user-attachments/assets/0f027658-df14-466a-910f-9bd2d879d9b4" />
+
+- 보안 그룹 설정: 외부에서 애플리케이션에 접근할 수 있도록 EC2 인스턴스의 **보안 그룹(Security Group)**에서 HTTP(80) 및 HTTPS(443) 포트를 열어줍니다. 필요에 따라 애플리케이션이 사용하는 포트(예: 8080)도 추가해야 합니다.
+- SSH 접속
+  1. cd Downloads
+  2. cmd
+   2-1. cmd로 ssh접속: C:\Users\사용자이름\Downloads> ssh -i sems-project1-key.pem ubuntu@13.218.91.124(퍼블릭 IPv4주소)
+   <img width="1161" height="1097" alt="image" src="https://github.com/user-attachments/assets/79a7083a-8a3f-46dc-a5a8-4ec035c34535" />
+   <img width="1717" height="583" alt="image" src="https://github.com/user-attachments/assets/bc7bdb8b-9110-4614-9ffb-29278df6b25e" />
+  <img width="916" height="122" alt="image" src="https://github.com/user-attachments/assets/711f926d-1fe6-4404-9951-13fd473ff5cb" /> ---------->java 설치 할것<br>
+  <img width="1457" height="507" alt="image" src="https://github.com/user-attachments/assets/89b283b3-836c-4f31-8961-6311520c29c8" />
+  <img width="1680" height="647" alt="image" src="https://github.com/user-attachments/assets/57f24f15-e799-4122-8525-c6bf22a664d5" />
+<img width="1724" height="705" alt="image" src="https://github.com/user-attachments/assets/6cd2d95e-9138-43f6-b8bb-8adf9bc95a11" />
+<hr>
+- nohup 명령어로 백그라운드 실행을 하면 컴퓨터가 꺼져도 서버는 계속 실행 <br>
+- 프로세스 ID(PID) 찾기: ps -ef | grep java 명령어를 입력해서 현재 실행 중인 자바 프로세스를 찾으세요. 여러분의 스프링 서버와 관련된 프로세스 ID(숫자)를 확인할 수 있습니다. <br>
+- 프로세스 종료: kill -9 [프로세스 ID] 명령어로 해당 프로세스를 강제 종료합니다. <br><br><br>
+   2-2. 새 cmd로 접속해서 .pem,.jar파일 aws로 옮기기: "C:\Users\사용자이름\Downloads\sems-project1-key.pem" "C:\Users\사용자이름\intelij-workspace\SEMS_Project_6\backend\build\libs\backend-0.0.1-SNAPSHOT.jar" ubuntu@13.218.91.124:/home/ubuntu/
+
+<img width="1723" height="42" alt="image" src="https://github.com/user-attachments/assets/9a1a84c6-d3f6-4f8d-a9f6-84169064a111" />
 
 
+- 애플리케이션 실행 <br>
+ 1. java -jar your_app.jar 명령어를 이용해 스프링 애플리케이션을 실행합니다. 이 때 백그라운드 실행을 위해 nohup이나 Systemd를 사용하는 것이 좋습니다.
 
+<img width="1715" height="796" alt="image" src="https://github.com/user-attachments/assets/c6679aab-330e-4cd1-a30b-d9b2a49ae6b4" />
 
 
 
