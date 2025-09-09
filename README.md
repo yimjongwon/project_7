@@ -245,6 +245,24 @@ delete from sensor_data;
 <img width="1715" height="796" alt="image" src="https://github.com/user-attachments/assets/c6679aab-330e-4cd1-a30b-d9b2a49ae6b4" />
 
 
+3. RDS 설정
+   <img width="2942" height="1343" alt="image" src="https://github.com/user-attachments/assets/512d0ec7-1886-4a2a-b521-5d4848f70372" />
+<img width="2920" height="1606" alt="image" src="https://github.com/user-attachments/assets/9d342fb7-9778-4937-983f-502bba3588dc" />
+<img width="2931" height="1172" alt="image" src="https://github.com/user-attachments/assets/a849d826-6ab1-4ed5-bf08-8bd937ffd6ef" />
+<img width="2932" height="1400" alt="image" src="https://github.com/user-attachments/assets/41c37cf4-9a2e-4546-92b0-5f11425bd5e2" />
+
+
+
+
+
+<img width="2925" height="1652" alt="image" src="https://github.com/user-attachments/assets/52d86b43-933b-4cf5-a6db-51d8dc937cb4" />
+<img width="2925" height="1715" alt="image" src="https://github.com/user-attachments/assets/77cf3d0a-c1b0-4847-ad4f-6d2bee692d22" />
+<img width="1354" height="140" alt="image" src="https://github.com/user-attachments/assets/ab0e5c20-e67c-4219-b614-e1a12f55a310" />
+
+<img width="2060" height="1667" alt="image" src="https://github.com/user-attachments/assets/7cdb064b-7548-4f35-ad10-fd7c8566421b" />
+<img width="448" height="84" alt="image" src="https://github.com/user-attachments/assets/b5255baf-7bba-4daf-ad1d-b68e680b6068" />
+
+
 
 
 
