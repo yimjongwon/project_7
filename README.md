@@ -192,7 +192,15 @@ delete from sensor_data;
 
 # AWS 배포하는방법
 1. 프론트엔드 서버  배포
-- ㅁㅁㅁㅁㅁ
+- S3 버킷 생성 : AWS Management Console에서 S3 버킷을 생성합니다. 버킷 이름은 배포할 도메인 이름과 일치시키는 것이 좋습니다.
+- 정적 웹 호스팅 설정: 버킷의 속성에서 "정적 웹 사이트 호스팅"을 활성화하고, 인덱스 문서와 오류 문서를 index.html로 설정합니다.
+  <img width="2948" height="904" alt="image" src="https://github.com/user-attachments/assets/f47309ce-0b1c-4a2d-8010-5a07449fe78a" />
+  <img width="2936" height="887" alt="image" src="https://github.com/user-attachments/assets/eaac686a-eb66-4aee-b8b5-033025648ca1" />
+  <img width="2945" height="1083" alt="image" src="https://github.com/user-attachments/assets/350f4f67-ef18-46cc-9ae4-f3b450ed650f" />
+
+- React 앱 빌드 및 업로드: 로컬 환경에서 React 앱을 빌드합니다. intelij> local cmd창에서 npm run build 입력
+<img width="328" height="391" alt="image" src="https://github.com/user-attachments/assets/77fca860-8d43-4dc6-bd66-0f9943c8f313" />
+
   
 2. 백엔드 서버 배포
 - Spring Boot 애플리케이션 빌드-> .jar
@@ -245,4 +253,4 @@ delete from sensor_data;
 
 
 
->>>>>>> a07a404f90a9fed4d465883a74e3cd5901d3dfca
+
