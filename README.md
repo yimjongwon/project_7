@@ -198,8 +198,9 @@ delete from sensor_data;
   <img width="2936" height="887" alt="image" src="https://github.com/user-attachments/assets/eaac686a-eb66-4aee-b8b5-033025648ca1" />
   <img width="2945" height="1083" alt="image" src="https://github.com/user-attachments/assets/350f4f67-ef18-46cc-9ae4-f3b450ed650f" />
 
-- React 앱 빌드 및 업로드: 로컬 환경에서 React 앱을 빌드합니다. intelij> local cmd창에서 npm run build 입력
+- React 앱 빌드 및 파일 업로드: 로컬 환경에서 React 앱을 빌드합니다. intelij> local cmd창에서 npm run build 입력
 <img width="328" height="391" alt="image" src="https://github.com/user-attachments/assets/77fca860-8d43-4dc6-bd66-0f9943c8f313" />
+<img width="2973" height="987" alt="image" src="https://github.com/user-attachments/assets/3f4c81f2-56e1-45eb-b275-af9dfb4d2cfa" />
 
   
 2. 백엔드 서버 배포
