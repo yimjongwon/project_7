@@ -234,7 +234,7 @@ delete from sensor_data;
 - nohup 명령어로 백그라운드 실행을 하면 컴퓨터가 꺼져도 서버는 계속 실행 <br>
 - 프로세스 ID(PID) 찾기: ps -ef | grep java 명령어를 입력해서 현재 실행 중인 자바 프로세스를 찾으세요. 여러분의 스프링 서버와 관련된 프로세스 ID(숫자)를 확인할 수 있습니다. <br>
 - 프로세스 종료: kill -9 [프로세스 ID] 명령어로 해당 프로세스를 강제 종료합니다. <br><br><br>
-   2-2. 새 cmd로 접속해서 .pem,.jar파일 aws로 옮기기: "C:\Users\사용자이름\Downloads\sems-project1-key.pem" "C:\Users\사용자이름\intelij-workspace\SEMS_Project_6\backend\build\libs\backend-0.0.1-SNAPSHOT.jar" ubuntu@13.218.91.124:/home/ubuntu/
+   2-2. 새 cmd로 접속해서 .pem,.jar파일 aws로 옮기기: scp -i "C:\Users\사용자이름\Downloads\sems-project1-key.pem" "C:\Users\사용자이름\intelij-workspace\SEMS_Project_6\backend\build\libs\backend-0.0.1-SNAPSHOT.jar" ubuntu@13.218.91.124:/home/ubuntu/
 
 <img width="1723" height="42" alt="image" src="https://github.com/user-attachments/assets/9a1a84c6-d3f6-4f8d-a9f6-84169064a111" />
 
