@@ -245,7 +245,7 @@ delete from sensor_data;
 <img width="1715" height="796" alt="image" src="https://github.com/user-attachments/assets/c6679aab-330e-4cd1-a30b-d9b2a49ae6b4" />
 
 
-3. RDS 설정
+# 3. RDS 설정
    <img width="2942" height="1343" alt="image" src="https://github.com/user-attachments/assets/512d0ec7-1886-4a2a-b521-5d4848f70372" />
 <img width="2920" height="1606" alt="image" src="https://github.com/user-attachments/assets/9d342fb7-9778-4937-983f-502bba3588dc" />
 <img width="2931" height="1172" alt="image" src="https://github.com/user-attachments/assets/a849d826-6ab1-4ed5-bf08-8bd937ffd6ef" />
@@ -263,7 +263,17 @@ delete from sensor_data;
 <img width="448" height="84" alt="image" src="https://github.com/user-attachments/assets/b5255baf-7bba-4daf-ad1d-b68e680b6068" />
 
 4. 데이터베이스 마이그레이션: mysql-> aws rds
-<img width="723" height="473" alt="image" src="https://github.com/user-attachments/assets/5c43d71b-8526-4c94-a97b-95aed6e4d791" />
+<img width="723" height="473" alt="image" src="https://github.com/user-attachments/assets/5c43d71b-8526-4c94-a97b-95aed6e4d791" /> <br>
+## 덤프 파일 생성
+  <img width="1580" height="1552" alt="image" src="https://github.com/user-attachments/assets/016cf345-4d5c-4143-a217-f92fc967b7fa" />
+  <img width="1700" height="192" alt="image" src="https://github.com/user-attachments/assets/ccc4184c-3e62-49ee-b226-75eec3e8ffd2" />
+  <img width="1470" height="90" alt="image" src="https://github.com/user-attachments/assets/c6989a51-0a05-409c-8faf-d917a0e78af7" />
+  <img width="1303" height="350" alt="image" src="https://github.com/user-attachments/assets/ab325089-29f7-4d5a-84d4-f16f346f3dba" />
+ 업로드
+  <img width="1886" height="337" alt="image" src="https://github.com/user-attachments/assets/ad811fbc-516f-4337-a42f-8e104e2ffb09" />
+
+## 테이블 내용확인 
+<img width="1692" height="1101" alt="image" src="https://github.com/user-attachments/assets/ff7ebc20-7929-4abd-a0c6-3ff30c171519" />
 
 
 
