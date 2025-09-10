@@ -262,7 +262,8 @@ delete from sensor_data;
 <img width="2060" height="1667" alt="image" src="https://github.com/user-attachments/assets/7cdb064b-7548-4f35-ad10-fd7c8566421b" />
 <img width="448" height="84" alt="image" src="https://github.com/user-attachments/assets/b5255baf-7bba-4daf-ad1d-b68e680b6068" />
 
-
+4. 데이터베이스 마이그레이션: mysql-> aws rds
+<img width="723" height="473" alt="image" src="https://github.com/user-attachments/assets/5c43d71b-8526-4c94-a97b-95aed6e4d791" />
 
 
 
