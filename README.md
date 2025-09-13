@@ -235,14 +235,23 @@ delete from sensor_data;
 - 프로세스 ID(PID) 찾기: ps -ef | grep java 명령어를 입력해서 현재 실행 중인 자바 프로세스를 찾으세요. 여러분의 스프링 서버와 관련된 프로세스 ID(숫자)를 확인할 수 있습니다. <br>
 - 프로세스 종료: kill -9 [프로세스 ID] 명령어로 해당 프로세스를 강제 종료합니다. <br><br><br>
    2-2. 새 cmd로 접속해서 .pem,.jar파일 aws로 옮기기: scp -i "C:\Users\사용자이름\Downloads\sems-project1-key.pem" "C:\Users\사용자이름\intelij-workspace\SEMS_Project_6\backend\build\libs\backend-0.0.1-SNAPSHOT.jar" ubuntu@13.218.91.124:/home/ubuntu/
-
 <img width="1723" height="42" alt="image" src="https://github.com/user-attachments/assets/9a1a84c6-d3f6-4f8d-a9f6-84169064a111" />
-
 
 - 애플리케이션 실행 <br>
  1. java -jar your_app.jar 명령어를 이용해 스프링 애플리케이션을 실행합니다. 이 때 백그라운드 실행을 위해 nohup이나 Systemd를 사용하는 것이 좋습니다.
-
 <img width="1715" height="796" alt="image" src="https://github.com/user-attachments/assets/c6679aab-330e-4cd1-a30b-d9b2a49ae6b4" />
+
+
+  3-1. cmd로 파이썬 폴더 옮기기
+<img width="1710" height="158" alt="image" src="https://github.com/user-attachments/assets/67827d36-1c41-4f54-9795-5b6a45912c01" />
+<img width="1059" height="60" alt="image" src="https://github.com/user-attachments/assets/a56b577e-d68e-45af-8a94-1fc9e5e33eef" />
+  3-2. flask-backend 폴더에 가상환경만들기
+<img width="1892" height="1262" alt="image" src="https://github.com/user-attachments/assets/77dbedb4-287f-4cbc-ae26-0c698be4ce01" />
+3-3. 파이썬 서버 실행
+<img width="1237" height="55" alt="image" src="https://github.com/user-attachments/assets/5a576c7b-e13e-424b-ab3c-19d3b006da21" />
+<img width="1094" height="58" alt="image" src="https://github.com/user-attachments/assets/be5dd138-ada2-4c1f-88b9-2ee145009e14" />
+
+
 
 
 # 3. RDS 설정
@@ -250,7 +259,6 @@ delete from sensor_data;
 <img width="2920" height="1606" alt="image" src="https://github.com/user-attachments/assets/9d342fb7-9778-4937-983f-502bba3588dc" />
 <img width="2931" height="1172" alt="image" src="https://github.com/user-attachments/assets/a849d826-6ab1-4ed5-bf08-8bd937ffd6ef" />
 <img width="2932" height="1400" alt="image" src="https://github.com/user-attachments/assets/41c37cf4-9a2e-4546-92b0-5f11425bd5e2" />
-
 
 
 
