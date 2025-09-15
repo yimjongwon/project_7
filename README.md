@@ -252,7 +252,11 @@ delete from sensor_data;
 <img width="1237" height="55" alt="image" src="https://github.com/user-attachments/assets/5a576c7b-e13e-424b-ab3c-19d3b006da21" />
 <img width="1094" height="58" alt="image" src="https://github.com/user-attachments/assets/be5dd138-ada2-4c1f-88b9-2ee145009e14" />
 
-
+3-4. 파이썬 서버 실행 안될시 모듈 설치 할것. : python app.py로 확인가능
+<img width="1625" height="444" alt="image" src="https://github.com/user-attachments/assets/329dc6a6-1647-46a6-bf85-c3dd37c50ca0" />
+<img width="1606" height="554" alt="image" src="https://github.com/user-attachments/assets/7f2c347a-7a27-4000-9086-57ce1e004808" />
+<img width="1688" height="363" alt="image" src="https://github.com/user-attachments/assets/2957fe78-f4de-41c1-b540-c36315ac774b" />
+<img width="1692" height="389" alt="image" src="https://github.com/user-attachments/assets/74c29289-9656-4be1-85a6-7de36e659f00" />
 
 
 # 3. RDS 설정
