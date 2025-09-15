@@ -247,6 +247,7 @@ delete from sensor_data;
 <img width="1059" height="60" alt="image" src="https://github.com/user-attachments/assets/a56b577e-d68e-45af-8a94-1fc9e5e33eef" />
   3-2. flask-backend 폴더에 가상환경만들기
 <img width="1892" height="1262" alt="image" src="https://github.com/user-attachments/assets/77dbedb4-287f-4cbc-ae26-0c698be4ce01" />
+## source venv/bin/activate
 3-3. 파이썬 서버 실행
 <img width="1237" height="55" alt="image" src="https://github.com/user-attachments/assets/5a576c7b-e13e-424b-ab3c-19d3b006da21" />
 <img width="1094" height="58" alt="image" src="https://github.com/user-attachments/assets/be5dd138-ada2-4c1f-88b9-2ee145009e14" />
