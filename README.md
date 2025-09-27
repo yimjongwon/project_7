@@ -288,6 +288,25 @@ delete from sensor_data;
 ## 테이블 내용확인 
 <img width="1692" height="1101" alt="image" src="https://github.com/user-attachments/assets/ff7ebc20-7929-4abd-a0c6-3ff30c171519" />
 
+## 테스트 
+JMeter는 웹 서버나 애플리케이션의 성능을 테스트하는 데 사용되는 오픈 소스 도구 <br>
+JMeter의 주요 특징
+- 다양한 프로토콜 지원: HTTP, FTP, JDBC(데이터베이스) 등 여러 프로토콜을 지원하여 웹 서버뿐만 아니라 다양한 시스템을 테스트할 수 있습니다.
+
+- 시나리오 기반 테스트: 실제 사용자가 웹사이트에서 하는 행동(로그인, 페이지 이동, 데이터 전송 등)을 스크립트로 만들어서 반복적으로 실행할 수 있습니다.
+
+- 그래픽 사용자 인터페이스(GUI): 직관적인 GUI를 제공하여 테스트 시나리오를 쉽게 만들고, 테스트 결과를 그래프나 표로 시각화하여 보여줍니다.
+
+- 성능 지표 확인: 요청에 대한 응답 시간, 처리량, 오류율 등 서버의 성능을 나타내는 중요한 지표들을 측정하고 분석할 수 있습니다.
+<br>
+<img width="1906" height="771" alt="image" src="https://github.com/user-attachments/assets/59f37c04-d86d-4de1-b74b-7b8e18723aaf" />
+<img width="1915" height="642" alt="image" src="https://github.com/user-attachments/assets/2c692f2a-1794-4e86-927e-459a7c39afe7" />
+<img width="1914" height="346" alt="image" src="https://github.com/user-attachments/assets/1152be80-af61-4ae6-815a-198d3c31e2ba" />
+<img width="1908" height="974" alt="image" src="https://github.com/user-attachments/assets/8ee282fb-245e-4353-b31e-48143721758c" />
+<img width="2486" height="1095" alt="image" src="https://github.com/user-attachments/assets/3305a164-6735-49ab-bc49-d9cfb60c7899" />
+<img width="3822" height="1867" alt="image" src="https://github.com/user-attachments/assets/943f86de-e6b0-4af4-979e-9c17208f4a72" />
+<img width="3369" height="1523" alt="image" src="https://github.com/user-attachments/assets/d4a2fe06-0a43-477e-b669-26b429827574" />
+
 
 
 
