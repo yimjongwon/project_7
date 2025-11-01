@@ -223,7 +223,7 @@ delete from sensor_data;
 - SSH 접속
   1. cd Downloads
   2. cmd
-   2-1. cmd로 ssh접속: C:\Users\사용자이름\Downloads> ssh -i sems-project1-key.pem ubuntu@107.21.218.155(퍼블릭 IPv4주소)
+   2-1. cmd로 ssh접속: C:\Users\사용자이름\Downloads> ssh -i sems-project1-key.pem ubuntu@34.231.96.8(퍼블릭 IPv4주소)
    <img width="1161" height="1097" alt="image" src="https://github.com/user-attachments/assets/79a7083a-8a3f-46dc-a5a8-4ec035c34535" />
    <img width="1717" height="583" alt="image" src="https://github.com/user-attachments/assets/bc7bdb8b-9110-4614-9ffb-29278df6b25e" />
   <img width="916" height="122" alt="image" src="https://github.com/user-attachments/assets/711f926d-1fe6-4404-9951-13fd473ff5cb" /> ---------->java 설치 할것<br>
