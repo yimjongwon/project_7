@@ -1,8 +1,8 @@
 깃허브 주소- https://github.com/yimjongwon/project_7.git <br>
 뱃지 참고- https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#-databases <br>
 아이콘- https://simpleicons.org/?q=sql <br>
-서식- https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-서식- http://sems-project1.s3-website-us-east-1.amazonaws.com
+서식- https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax <br>
+배포- http://sems-project1.s3-website-us-east-1.amazonaws.com
 # 팀 404 찾을 수 없음
 ### 3주차 (2주차 피드백)
 - 작품의 세분화 된 시장분석이 필요하기 때문에
