@@ -78,8 +78,16 @@ STP정책 실행
 <img src="https://github.com/user-attachments/assets/304423ca-ad67-4d95-a106-9f7996a30d3a" width= "800px;" height="300px;"/><br>
 <img src="https://github.com/user-attachments/assets/bc015444-5fb5-4b3b-905d-56a78ca5cd57" width= "800px;" height="400px;"/><br>
 # -ERD
-
 <img src="https://github.com/user-attachments/assets/3817d9d0-21b3-4f0d-ada2-94989c2f21de" width= "800px;" height="400px;"/><br>
+# -시스템 구성도
+<p align="center">
+  <img src="./docs/시스템구성도.drawio.png" alt="ERD 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
+</p>
+<p align="center">
+  <img src="./docs/시스템구성도(포스터).png" alt="ERD 포스터 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
+</p><br>
+
+
 <img src="https://github.com/user-attachments/assets/1660d788-0a15-4a72-a900-94bab6bbb91f" width= "800px;" height="400px;"/><br>
 <img src="https://github.com/user-attachments/assets/9a9a7761-4a10-41c6-aca9-c60ebd477eab" width= "800px;" height="400px;"/><br>
 <img src="https://github.com/user-attachments/assets/b8b3b57b-5af9-494c-9e51-8a37e0372c95" width= "800px;" height="400px;"/><br>
@@ -87,14 +95,7 @@ STP정책 실행
 <img src="https://github.com/user-attachments/assets/b00b6bc3-b6c7-4fa2-853c-74f5de74d908" width= "800px;" height="400px;"/><br>
 
 
-# -시스템 구성도
 
-<p align="center">
-  <img src="./docs/시스템구성도.drawio.png" alt="ERD 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
-</p>
-<p align="center">
-  <img src="./docs/시스템구성도(포스터).png" alt="ERD 포스터 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
-</p>
 
 ### 5주차
 
