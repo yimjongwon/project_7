@@ -87,6 +87,15 @@ STP정책 실행
 <img src="https://github.com/user-attachments/assets/b00b6bc3-b6c7-4fa2-853c-74f5de74d908" width= "800px;" height="400px;"/><br>
 
 
+# -시스템 구성도
+
+<p align="center">
+  <img src="./docs/시스템구성도.drawio.png" alt="ERD 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
+</p>
+<p align="center">
+  <img src="./docs/시스템구성도(포스터).png" alt="ERD 포스터 다이어그램" style="width:100%; max-width:1000px; display:block; margin: 0 auto;">
+</p>
+
 ### 5주차
 
 ![image](https://github.com/user-attachments/assets/0d106e5b-36dc-4d83-a433-c2c31e5ad9f8)
